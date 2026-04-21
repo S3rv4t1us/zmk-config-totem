@@ -20,9 +20,7 @@
 #define NAV    1
 #define SYM    2
 #define ADJ    3
-#define TVP1   4
-#define TVP2   5
-#define SYSTEM 6
+#define SYSTEM 4
 
 &mt {
   quick-tap-ms = <100>;
@@ -43,22 +41,9 @@
         };
      };
 
-     combos {
-            compatible = "zmk,combos";
-            combo_esc {
-                timeout-ms = <50>;
-                key-positions = <0 1>;
-                bindings = <&kp ESC>;
-            };
-            combo_tvp {
-                timeout-ms = <100>;
-                key-positions = <11 12 13>;
-                bindings = <&tog TVP1>;
-            };
-    };
         keymap {
                 compatible = "zmk,keymap";
-        }
+
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
                 base_layer {
@@ -188,4 +173,5 @@ label= "SYS"                               ;
                         >;
                 };
 
-}
+        };
+};
