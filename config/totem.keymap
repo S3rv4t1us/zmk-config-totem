@@ -30,6 +30,10 @@
   tapping-term-ms = <170>;
 };
 
+&lt {
+  quick-tap-ms = <200>;
+};
+
 / {
      behaviors {
         ht: hold_tap {
@@ -196,3 +200,5 @@ label= "GAME"                               ;
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
                 };
+        };
+};
